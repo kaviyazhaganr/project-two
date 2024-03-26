@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *,
+        ::before,
+        ::after {
+            padding: 0;
+            margin: 0%;
+
+        }
+
+        @font-face {
+            font-family: sam;
+            src: url(/easybank-landing-page-master/style/Euclid\ Circular\ B\ Light.ttf);
+        }
+
+        body{
+            font-family: sam;
+        }
+
+        /* 
+        body::before {
+            content: "mobile";
+
+        } */
+
+        .container {
+            max-width: 577px;
+        }
+
+        .menu_logu::after{
+            content: url(/easybank-landing-page-master/images/icon-hamburger.svg);
+           position: absolute;
+           top: 5%;
+           right: 6%;
+           
+        }
+
+     
+
+        .menu_nav{
+            
+            border: 1px solid black;
+            text-align: center;
+            background-color: white;
+           margin-inline: 50px;
+         
+        }
+
+        .menu_nav a {
+           display: block;
+           text-decoration: none;
+           color: black;
+           margin-block: 10px;
+           
+        } 
+
+        
+
+        .menu_btn a {
+            display: none;
+        }
+
+        .menu_logu {
+            padding-inline: 10px;
+            padding-block: 10px;
+            border: 1px solid black;
+        }
+
+        /* home */
+
+
+        .home_content {
+            display: flex;
+            flex-direction: column-reverse;
+            /* border: 1px solid black; */
+            margin-bottom: 80px;
+            /* background-color: rgb(244, 234, 234); */
+
+
+        }
+
+        .content-right {
+            /* margin-inline: auto; */
+            background-image: url(/easybank-landing-page-master/images/bg-intro-mobile.svg);
+            background-position: 0% 0%;
+            background-repeat: no-repeat;
+            background-size: 90%;
+            /* border: 1px solid brown; */
+            overflow: hidden;
+        }
+
+        .home_content_right img {
+
+            width: 550px;
+            margin-top: -50px;
+
+
+        }
+
+        .home_content_left {
+            margin: auto;
+            width: 80%;
+            height: 40%;
+            /* border: 1px solid brown; */
+            margin-block: auto;
+        }
+
+        .home_content_left h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+
+        }
+
+        .home_content_left p {
+
+            line-height: 40px;
+            margin-bottom: 28px;
+            text-align: justify;
+            color: grey;
+            font-size: 30px;
+        }
+
+
+        .home_btn {
+            text-align: center;
+        }
+
+        .home_btn a {
+            text-decoration: none;
+            padding-inline: 20px;
+            padding-block: 10px;
+            /* border: 1px solid brown; */
+            font-size: 30px;
+            border-radius: 18px;
+            color: white;
+            background-image: linear-gradient(90deg, rgb(124, 236, 124), rgb(130, 130, 215));
+
+        }
+
+
+
+        /* easy */
+
+        .Easybank {
+            background-color: lightgrey;
+            padding-block: 80px;
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .Easybank_content {
+
+            /* margin-bottom: 70px; */
+
+            /* border: 1px solid black; */
+            margin-inline: 50px;
+            width: 80%;
+
+
+        }
+
+        .Easybank_content h2 {
+            padding-bottom: 20px;
+            font-size: 45px;
+
+            margin: auto;
+        }
+
+        .Easybank_content p {
+            line-height: 40px;
+
+            font-size: 22px;
+            margin: auto;
+
+
+        }
+
+        .Easybank_content_card {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .content_card {
+            width: 80%;
+            /* border: 1px solid black; */
+            margin: auto;
+            font-size: 22px;
+            padding-top: 60px;
+            line-height: 40px;
+
+
+        }
+
+        .content_card h3 {
+            padding-top: 20px;
+        }
+
+        .content_card p {
+            padding-top: 20px;
+
+        }
+
+        /*article*/
+
+        .article {
+            margin-block: 80px;
+        }
+
+
+        .article h2 {
+            text-align: center;
+        }
+
+        .article_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+
+        .article_image {
+            width: 80%;
+            margin: auto;
+
+        }
+
+        .article_image img {
+            width: 100%;
+            height: 200px;
+        }
+
+        .article_image_sub {
+            width: 75%;
+            margin-inline: auto;
+            margin-block: 20px;
+            font-size: 20px;
+
+        }
+        .article_image_sub h3{
+            font-size: 22px;
+        }
+
+
+        .article_image_sub h5,
+        p {
+            color: grey;
+        }
+
+        .article_image_sub h3,
+        h5 {
+            margin-bottom: 20px;
+        }
+
+        .article_image h3:hover {
+            color: lightgreen;
+        }
+
+        /*footer*/
+        .footer {
+            /* border: 2px solid red; */
+           
+            /* background-color: rgb(2, 2, 55); */
+            /* padding-inline: 40px;
+            padding-block: 30px; */
+            
+
+        }
+
+        .footer_sub
+
+        .footer a {
+            color: grey;
+            text-align: center;
+        }
+
+        .footer_sub {
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+        background-color: rgb(2, 2, 55);
+           
+            margin: auto;
+
+        }
+
+        .footer_con {
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid red; */
+            /* flex-basis: 70%; */
+        }
+
+       
+
+        .footer_con a {
+            display: block;
+            text-decoration: none;
+            padding-block: 10px;
+        }
+
+        .footer_con a:hover {
+            color: lightgreen;
+        }
+/* 
+        .footer_content {
+            margin-left: 200px;
+            margin-right: 100px;
+        } */
+        .footer_logo{
+            text-align: center;
+        }
+
+        .footer_logo_sub {
+            margin-top: 30px;
+            text-align: center;
+              
+        }
+
+        .footer_logo_sub img {
+            margin: 5px;
+            /* border:1px solid red */
+        }
+
+        .footer_logo_sub img:hover {
+            background-color: lightgreen;
+        }
+
+
+        .footer_btn{
+            text-align: center;
+            margin-top: 20px;
+            margin-left: 0;
+        }
+        
+
+        .footer_btn a {
+            text-decoration: none;
+            padding-inline: 20px;
+            padding-block: 10px;
+            /* border: 1px solid brown; */
+            border-radius: 18px;
+            color: white;
+            background-image: linear-gradient(90deg, rgb(124, 236, 124), rgb(130, 130, 215));
+            font-size: 20px;
+            
+
+        }
+
+
+
+
+
+
+
+
+        /*   desktop  */
+
+        @media screen and (min-width:578px) {
+            /* body::before {
+                content: "desktop";
+            } */
+
+            .container {
+                max-width: 1400px;
+                margin: auto;
+                /* border:1px solid black; */
+               
+            }
+
+            .menu {
+                display: flex;
+                justify-content: space-between;
+                /* margin-top: 30px; */
+                /* margin-bottom: 15px; */
+                /* border: 1px solid brown; */
+
+
+            }
+
+            .menu_logu::after{
+            content: none;
+        }
+
+            .menu_logu {
+                border: none;
+                padding-inline: 0px;
+                padding-block: 0px;
+                margin-top: 18px;
+            }
+
+            .menu_nav{
+            
+            border: none;
+            text-align: center;
+            background-color: white;
+            margin-top: 10px;
+        
+        }
+
+            .menu_nav a {
+                text-decoration: none;
+                margin-inline: 20px;
+                color: grey;
+                position: relative;
+                display: inline-block;
+               
+                
+            }
+
+            .menu_nav :hover::after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                background-color: green;
+                bottom: -17px;
+
+            }
+
+            .menu_btn {
+                margin: 10px;
+
+            }
+
+            .menu_btn a {
+                text-decoration: none;
+                padding-inline: 20px;
+                padding-block: 10px;
+                border: 1px solid brown;
+                border-radius: 18px;
+                color: white;
+                display: block;
+                background-image: linear-gradient(90deg, rgb(124, 236, 124), rgb(130, 130, 215));
+
+            }
+
+
+
+            /* home */
+            .home {
+                background-color: rgb(244, 234, 234);
+
+            }
+
+            .home_content {
+                display: flex;
+                height: 600px;
+                flex-direction: row;
+                margin-bottom: 0px;
+                background-color: rgb(244, 234, 234);
+
+            }
+
+            .home_content_left {
+                width: 30%;
+                height: 40%;
+                /* border: 1px solid brown; */
+                margin-block: auto;
+            }
+
+            .home_content_left h1 {
+                font-size: 40px;
+                margin-bottom: 20px;
+            }
+
+            .home_content_left p {
+
+                line-height: 25px;
+                margin-bottom: 28px;
+                font-size: 20px;
+            }
+
+            .content-right {
+                /* border: 1px solid brown; */
+                width: 70%;
+                background-image: url(/easybank-landing-page-master/images/bg-intro-desktop.svg);
+                /* background-position: 10% 100%; */
+                /* background-size: 700px 300px; */
+
+                background-repeat: no-repeat;
+                position: relative;
+               overflow: hidden;
+            }
+
+
+
+            .home_content_right img {
+                /* border: 1px solid green; */
+                width: 1000px;
+                height: 800px;
+                position: absolute;
+                top: -20px;
+                left: 50px;
+
+
+
+            }
+
+            .home_btn {
+                text-align: start;
+                margin-top: 15px;
+            }
+
+            .home_btn a {
+                text-decoration: none;
+                padding-inline: 20px;
+                padding-block: 10px;
+                /* border: 1px solid brown; */
+                border-radius: 18px;
+                color: white;
+                background-image: linear-gradient(90deg, rgb(124, 236, 124), rgb(130, 130, 215));
+                font-size: 20px;
+
+            }
+
+            /* easy */
+
+            .Easybank {
+                background-color: lightgrey;
+                padding-block: 40px;
+            }
+
+            .Easybank_content {
+               
+                margin-bottom: 40px;
+                font-size: 20px;
+                margin-inline: 0;
+                text-align: left;
+
+            }
+
+            .Easybank_content h2 {
+                padding-bottom: 20px;
+                font-size: 30px;
+            }
+
+            .Easybank_content p {
+                line-height: 30px;
+                color: grey;
+            }
+
+            .Easybank_content_card {
+                display: flex;
+                flex-direction: row;
+
+            }
+
+            .content_card {
+                flex-basis: 25%;
+                /* border: 1px solid black; */
+                margin-right: 10px;
+                font-size: 20px;
+                text-align: left;
+                padding-top: 30px;
+
+            }
+
+            .content_card h3 {
+                padding-top: 20px;
+            }
+
+            .content_card p {
+                padding-top: 20px;
+                line-height: 30px;
+                color: grey;
+            }
+
+            /*article*/
+
+            .article {
+                margin-block: 80px;
+            }
+
+            .article h2 {
+                text-align: left;
+            }
+
+            .article_content {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+            }
+
+            .article_image {
+                flex-basis: 23%;
+
+            }
+
+            .article_image img {
+                width: 100%;
+                height: 180px;
+            }
+
+            .article_image_sub {
+                padding-inline: px;
+                padding-top: 20px;
+                /* border: 1px solid black; */
+                font-size: 15px;
+
+            }
+
+            .article_image_sub h5 {
+                font-size: 15px;
+            }
+
+            .article_image_sub p {
+                font-size: 16px;
+                line-height: 26px;
+            }
+
+            .article_image_sub h5,
+            p {
+                color: grey;
+            }
+
+            .article_image_sub h3,
+            h5 {
+                margin-bottom: 10px;
+            }
+
+            .article_image h3:hover {
+                color: lightgreen;
+            }
+
+            /*footer*/
+            .footer {
+
+                background-color: rgb(2, 2, 55);
+                /* padding-inline: 40px;
+                padding-block: 30px; */
+                
+                text-align: center;
+                
+
+            }
+
+            .footer a {
+                color: grey;
+            }
+
+            .footer_sub {
+                display: flex;
+                flex-direction: row;
+                background-color: rgb(2, 2, 55);
+
+            }
+
+            .footer_con {
+                display: flex;
+                flex-direction: row;
+                /* border: 1px solid red; */
+                flex-basis: 70%;
+            }
+
+           
+
+            .footer_con a {
+                display: block;
+                text-decoration: none;
+                padding-block: 10px;
+            }
+
+            .footer_con a:hover {
+                color: lightgreen;
+            }
+
+            .footer_content {
+                margin-left: 200px;
+                margin-right: 100px;
+            }
+
+
+            .footer_logo_sub {
+                margin-top: 60px;
+
+
+            }
+
+            .footer_logo_sub img {
+                margin: 5px;
+                /* border:1px solid red */
+            }
+
+            .footer_logo_sub img:hover {
+                background-color: lightgreen;
+            }
+
+
+            .footer_btn a {
+                text-decoration: none;
+                padding-inline: 20px;
+                padding-block: 10px;
+                /* border: 1px solid brown; */
+                border-radius: 18px;
+                color: white;
+                background-image: linear-gradient(90deg, rgb(124, 236, 124), rgb(130, 130, 215));
+                font-size: 20px;
+                margin-left: 50px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+
+        <div class="menu">
+            <div class="menu_logu">
+                <img src="/easybank-landing-page-master/images/logo.svg" alt="">
+            </div>
+            <nav>
+                <div class="menu_nav">
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Contact</a>
+                    <a href="">Blog</a>
+                    <a href="">Careers</a>
+                </div>
+            </nav>
+
+            <div class="menu_btn">
+                <a href="">Request Invite</a>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="home">
+        <div class="container">
+
+            <div class="home_content">
+                <div class="home_content_left">
+                    <h1> Next generation digital banking</h1>
+                    <p>Take your financial life online. Your Easybank account will be a one-stop-shop for spending,
+                        saving, budgeting, investing, and much more.</p>
+                    <div class="home_btn">
+                        <a href="">Request Invite</a>
+                    </div>
+                </div>
+
+                <div class="content-right">
+                    <div class="home_content_right">
+                        <img src="/easybank-landing-page-master/images/image-mockups.png" alt="">
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="Easybank">
+        <div class="container">
+            <div class="Easybank_content">
+                <h2>Why choose Easybank?</h2>
+                <p>We leverage Open Banking to turn your bank account into your financial hub. <br>Control your finances
+                    like never before</p>
+            </div>
+
+            <div class="Easybank_content_card">
+                <div class="content_card">
+                    <img src="/easybank-landing-page-master/images/icon-online.svg" alt="">
+                    <h3>Online Banking</h3>
+                    <p>Our modern web and mobile applications allow you to keep track of your finances wherever you are
+                        in the world.</p>
+                </div>
+                <div class="content_card">
+                    <img src="/easybank-landing-page-master/images/icon-budgeting.svg" alt="">
+                    <h3>Simple Budgeting</h3>
+                    <p>See exactly where your money goes each month. Receive notifications when you’re close to hitting
+                        your limits.</p>
+                </div>
+                <div class="content_card">
+                    <img src="/easybank-landing-page-master/images/icon-onboarding.svg" alt="">
+                    <h3>Fast Onboarding</h3>
+                    <p>We don’t do branches. Open your account in minutes online and start taking control of your
+                        finances right away.</p>
+                </div>
+                <div class="content_card">
+                    <img src="/easybank-landing-page-master/images/icon-api.svg" alt="">
+                    <h3>Open API</h3>
+                    <p>Manage your savings, investments, pension, and much more from one account. Tracking your money
+                        has never been easier.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="article container">
+
+        <h2 style="padding-bottom: 30px;">Latest Articles</h2>
+
+        <div class="article_content">
+            <div class="article_image">
+                <img src="/easybank-landing-page-master/images/image-currency.jpg" alt="">
+                <div class="article_image_sub">
+                    <h5>By Claire Robinson</h5>
+                    <h3>Receive money in any currency with no fees</h3>
+                    <p>The world is getting smaller and we’re becoming more mobile. So why should you be forced to only
+                        receive money in a single …</p>
+                </div>
+            </div>
+            <div class="article_image">
+                <img src="/easybank-landing-page-master/images/image-restaurant.jpg" alt="">
+                <div class="article_image_sub">
+                    <h5>By Wilson Hutton</h5>
+                    <h3>Treat yourself without worrying about money</h3>
+                    <p>Our simple budgeting feature allows you to separate out your spending and set realistic limits
+                        each
+                        month. That means you …</p>
+                </div>
+            </div>
+            <div class="article_image">
+                <img src="/easybank-landing-page-master/images/image-currency.jpg" alt="">
+                <div class="article_image_sub">
+                    <h5>By Wilson Hutton</h5>
+                    <h3>Take your Easybank card wherever you go</h3>
+                    <p>We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re
+                        abroad. We’ll even show you …</p>
+                </div>
+            </div>
+            <div class="article_image">
+                <img src="/easybank-landing-page-master/images/image-currency.jpg" alt="">
+                <div class="article_image_sub">
+                    <h5>By Claire Robinson</h5>
+                    <h3>Our invite-only Beta accounts are now live!</h3>
+                    <p>After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to
+                        request an invite through the site ...</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div class="footer">
+
+            <div class="container footer_sub">
+
+                <div class="footer_con">
+
+                    <div class="footer_logo">
+
+                        <img src="/easybank-landing-page-master/images/logo.svg" alt="">
+                        <div class="footer_logo_sub">
+                            <img src="/easybank-landing-page-master/images/icon-facebook.svg" alt="">
+                            <img src="/easybank-landing-page-master/images/icon-youtube.svg" alt="">
+                            <img src="/easybank-landing-page-master/images/icon-twitter.svg" alt="">
+                            <img src="/easybank-landing-page-master/images/icon-pinterest.svg" alt="">
+                            <img src="/easybank-landing-page-master/images/icon-instagram.svg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="footer_content">
+                        <a href="">About Us</a>
+                        <a href="">Contact</a>
+                        <a href="">Blog</a>
+
+                    </div>
+                    <div class="footer_content_sub">
+                        <a href="">Careers</a>
+                        <a href="">Support</a>
+                        <a href="">Privacy Policy</a>
+                    </div>
+                </div>
+
+                <div class="footer_btn">
+                    <div class="footer_btn">
+                        <a href="">Request Invite</a>
+                    </div>
+                    <p style="padding-top: 50px;">© Easybank. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id=head1>
+        the style document
+    </h1>
+
+    <h2 id=sub_head></h2>
+
+
+    <ul>
+
+        <li class=list_items>html</li>
+        <li class=list_items>css</li>
+        <li class=list_items>java</li>
+        <li class=list_items>c++</li>
+    </ul>
+
+
+    <div class="section1">
+
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt id iusto dolorum quidem ipsam quibusdam
+            corrupti doloremque quas! Eaque praesentium quibusdam totam nulla, ducimus vitae nostrum fuga nihil accusantium
+            repellendus.
+        </p>
+    
+        <p class="para" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt id iusto dolorum quidem ipsam quibusdam
+            corrupti doloremque quas! Eaque praesentium quibusdam totam nulla, ducimus vitae nostrum fuga nihil accusantium
+            repellendus.
+        </p>
+
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt id iusto dolorum quidem ipsam quibusdam
+            corrupti doloremque quas! Eaque praesentium quibusdam totam nulla, ducimus vitae nostrum fuga nihil accusantium
+            repellendus.
+        </p>
+    
+        <p class="para" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt id iusto dolorum quidem ipsam quibusdam
+            corrupti doloremque quas! Eaque praesentium quibusdam totam nulla, ducimus vitae nostrum fuga nihil accusantium
+            repellendus.
+        </p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt id iusto dolorum quidem ipsam quibusdam
+        corrupti doloremque quas! Eaque praesentium quibusdam totam nulla, ducimus vitae nostrum fuga nihil accusantium
+        repellendus.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt id iusto dolorum quidem ipsam quibusdam
+        corrupti doloremque quas! Eaque praesentium quibusdam totam nulla, ducimus vitae nostrum fuga nihil accusantium
+        repellendus.
+    </p>
+
+    <script>
+
+        // var li = document.querySelector(".section1 .para")
+
+        // li.style.color = "red"
+
+        // console.log(li)
+
+
+        // document.querySelectorAll(".para")[0].style.color = "red"
+
+
+        var li2 = document.querySelectorAll(".section1 .para")
+
+        // li2[1].style.color = "red"
+
+        console.log(li2)
+
+        for ( var li3 of li2){
+
+            li3.style.color= "red"
+            console.log(li3)
+        }
+    </script>
+</body>
+</html>

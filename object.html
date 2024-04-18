@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        var marks = {
+
+            tamil: 90,
+            eng: 80,
+            mat: 70,
+            sci:20
+        }
+
+        var mark_key = Object.keys(marks);
+        console.log(mark_key.length)
+        console.log(mark_key)
+
+        for( var i of mark_key){
+
+            // console.log(i)
+
+            console.log(i + " -" + marks[i] )
+        }
+        
+        // console.log(marks)
+
+        // marks.mat = 90;
+
+        // delete marks.sci
+
+        // console.log(marks.mat)
+
+
+        // console.log(marks)
+        // console.log(marks.tamil)
+
+        // console.log(marks.tamil + "-" + marks.eng)
+
+
+        // var subject = "tamil"
+
+        // console.log("*************")
+        
+        // console.log(marks[subject])
+
+        
+
+
+        var users = [
+
+            {
+
+                id: 100,
+                name: "user1",
+                email: "user1test.com",
+                language: ["tamil", "englih", "german"]
+            },
+            {
+
+                id: 101,
+                name: "user2",
+                email: "user2test.com"
+            },
+            {
+
+                id: 102,
+                name: "user3",
+                email: "user3test.com"
+            }
+        ]
+
+        console.log(users[0].email)
+
+        console.log(users)
+
+        console.log(users.length) 
+
+        console.log(users[0].language[1])
+
+
+        for( var user of users){
+
+            console.log(user)
+
+            console.log(user.email)
+        }
+
+
+          function sum(n){
+            console.log(n)
+
+            if (n == 0){
+                return true;
+
+            } 
+            else{
+
+                return n * sum(n -1);
+            }
+            
+          }
+        var res = sum(7)
+
+        console.log("factorial"+" " + res)
+    </script>
+</body>
+
+</html>

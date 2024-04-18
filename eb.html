@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    .container{
+
+        width: 700px;
+        height: 500px;
+        margin: auto;
+        background-color: aquamarine;
+        color: black;
+    }
+</style>
+<body>
+    
+
+   
+
+    <script>
+
+     
+
+        var bill_unit = 520;
+        var bill_amt = 0;
+        var bill_reduce = 0;
+
+        var price_one = 2.25;
+        var price_two = 4.50;
+        var price_three = 6;
+        var price_four = 8;
+        var price_five = 9;
+        var price_six = 10;
+        var price_seven = 11;
+
+
+        if (bill_unit <= 100) {
+
+            bill_amt = 0 * bill_unit
+            console.log(bill_amt)
+        }
+        else if (bill_unit >= 100 && bill_unit <= 200) {
+
+            bill_amt = bill_unit - 100;
+            console.log(bill_amt)
+
+            bill_reduce = bill_amt
+
+            bill_amt = bill_reduce * price_one;
+            console.log(bill_amt)
+        }
+        else if (bill_unit >= 200 && bill_unit <= 400) {
+
+            bill_amt = bill_unit - 100;
+            console.log(bill_amt)
+
+            bill_reduce = bill_amt
+
+            bill_reduce = 100 * price_one + (bill_reduce - 100) *price_two;
+
+            console.log(bill_reduce)
+        }
+        else if (bill_unit >= 400 && bill_unit <= 500) {
+
+            bill_amt = bill_unit - 100;
+            console.log(bill_amt)
+
+            bill_reduce = bill_amt
+
+            bill_reduce = 100 * price_one + 200 * price_two + (bill_reduce - 300) * price_three;
+
+            console.log(bill_reduce)
+
+        }
+
+        else if (bill_unit >= 500 && bill_unit <= 600) {
+
+            bill_amt = bill_unit - 100;
+            console.log(bill_amt)
+
+            bill_reduce = bill_amt
+
+            bill_reduce = 300 *price_two + 100 * price_three + (bill_reduce - 400) * price_four;
+
+            console.log(bill_reduce)
+
+        }
+
+        else if (bill_unit >= 600 && bill_unit <= 800) {
+
+            console.log("t")
+
+            bill_amt = bill_unit - 100;
+            console.log(bill_amt)
+
+            bill_reduce = bill_amt
+
+            bill_reduce = 300 * price_two + 100 * price_three + 100 * price_four + (bill_reduce - 500) * price_five;
+
+            console.log(bill_reduce)
+
+        }
+        else if (bill_unit >= 800 && bill_unit <= 1000) {
+
+            console.log("f")
+
+            bill_amt = bill_unit - 100;
+            console.log(bill_amt)
+
+            bill_reduce = bill_amt
+
+            bill_reduce = 300 * price_two + 100 * price_three + 100 * price_four + 200 * price_five + (bill_reduce - 700) * price_six;
+
+            console.log(bill_reduce)
+
+        }
+
+        else  if (bill_unit > 1000)
+        {
+
+            console.log("p")
+
+            bill_amt = bill_unit - 100;
+            console.log(bill_amt)
+
+            bill_reduce = bill_amt
+
+            bill_reduce = 300 * price_two + 100 * price_three + 100 * price_four + 200 * price_five + 200 * price_six + (bill_reduce - 900) * price_seven ;
+
+            console.log(bill_reduce)
+
+
+        }
+
+
+        // for loop
+
+        for (var i = 1; i <=10; i++)
+        {
+            console.log(i)
+
+        }
+
+        var marks =[ 1,2,3,4,5]
+
+        for ( var m in marks )
+        {
+            console.log(m, marks[m]);
+        }
+
+
+        for (mark of marks)
+        {
+            console.log(mark);
+        }
+
+
+
+        // do while
+
+        var i = 0;
+
+        do{
+            console.log(i);
+            i++;
+        }while (i <= 10){
+
+        }
+
+
+        // function
+
+        console.log( "function")
+
+        function sum (a , b)
+        {
+        var c = a + b
+
+        console.log(c);
+
+        }
+
+        var n1 = 10
+        var n2 = 20
+        sum ( n1,n2)
+
+
+
+    </script>
+    
+</body>
+</html>

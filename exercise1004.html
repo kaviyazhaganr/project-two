@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+        <select name="" id="drop2" ></select>
+
+
+
+
+    
+
+    <ul id = "ul_three">
+
+    </ul>
+
+
+    <ul >
+
+        <li class="list_g">html</li>
+        <li class="list_g">css</li>
+        <li class="list_g">java</li>
+        <li class="list_g">c++</li>
+        <li class="list_g">node</li>
+
+    </ul>
+
+
+    <select name="" id="drop3"></select>
+
+
+
+    <script>
+
+        /*  Exercise - one */
+
+
+        var arr_one = ["madurai", "chennar", "chinnasalem", "kallakurichi"]
+
+        for (var i of arr_one) {
+
+
+            // console.log("**********")
+            // console.log(i)
+
+            var option_one = document.createElement("option")
+
+            option_one.textContent = i
+
+            console.log(option_one)
+
+            document.getElementById("drop2").appendChild(option_one)
+
+        }
+
+
+        for (var i of arr_one) {
+
+
+            // console.log("**********")
+            // console.log(i)
+
+            var option_one = document.createElement("li")
+
+            option_one.textContent = i
+
+            console.log(option_one)
+
+            document.getElementById("ul_three").appendChild(option_one)
+
+        }
+
+
+          /*  Exercise - two */
+
+
+        var get_li = document.getElementsByClassName("list_g")
+
+
+
+        console.log(get_li[1].innerHTML)
+
+
+        for (var i of get_li) {
+
+            var option_one = document.createElement("option")
+
+            option_one.textContent = i.innerHTML
+
+            document.getElementById("drop3").appendChild(option_one)
+        }
+
+
+        // var newsw = document.getElementById("ul_three")
+
+        // newsw.classList.add("one","two")
+
+    </script>
+
+</body>
+
+</html>

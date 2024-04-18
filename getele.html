@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id=head1>
+        the style document
+    </h1>
+
+    <h2 id=sub_head></h2>
+
+
+    <ul>
+
+        <li class=list_items>html</li>
+        <li class=list_items>css</li>
+        <li class=list_items>java</li>
+        <li class=list_items>c++</li>
+    </ul>
+
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt id iusto dolorum quidem ipsam quibusdam
+        corrupti doloremque quas! Eaque praesentium quibusdam totam nulla, ducimus vitae nostrum fuga nihil accusantium
+        repellendus.
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt id iusto dolorum quidem ipsam quibusdam
+        corrupti doloremque quas! Eaque praesentium quibusdam totam nulla, ducimus vitae nostrum fuga nihil accusantium
+        repellendus.
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt id iusto dolorum quidem ipsam quibusdam
+        corrupti doloremque quas! Eaque praesentium quibusdam totam nulla, ducimus vitae nostrum fuga nihil accusantium
+        repellendus.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt id iusto dolorum quidem ipsam quibusdam
+        corrupti doloremque quas! Eaque praesentium quibusdam totam nulla, ducimus vitae nostrum fuga nihil accusantium
+        repellendus.
+    </p>
+
+
+
+    <script>
+
+        // document.getElementById("head1")
+
+        // console.log( document.getElementById("head1").innerHTML)
+
+
+        var head1 = document.getElementById("head1").innerHTML
+
+        console.log(head1)
+
+        var head2 = document.getElementById("head1")
+
+
+        head2.style.color = "red"
+
+        head2.style.fontSize = "40px"
+
+        head2.style
+
+        document.getElementById("sub_head").innerHTML = "the pubg game";
+
+
+
+        /*  class */
+
+        var item = document.getElementsByClassName("list_items")
+
+        console.log(item)
+
+        console.log(item[0].innerHTML)
+
+
+        for (var i of item) {
+
+            console.log(i.innerHTML)
+
+            i.style.color = "blue"
+        }
+
+
+
+
+        /*  tagname   */
+
+        var tag_one = document.getElementsByTagName("p")
+
+        console.log(tag_one[0].innerHTML)
+
+        tag_one[1].style.color = "green"
+
+        for( var tak of tag_one){
+
+            console.log(tak.innerText)
+
+            tak.style.fontWeight =" bold"
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+         function promptNonNegativeNumber(message) {
+            var number;
+            do {
+                number = Number(prompt(message));
+                if (number < 0 || isNaN(number)) {
+                    alert("Invalid input. Please enter a non-negative number.");
+                }
+            } while (number < 0 || isNaN(number));
+            return number;
+        }
+
+
+        var firstNumber = prompt("Enter the first number:");
+
+
+        var operation = prompt("Enter the operation (+ for addition, - for subtraction):");
+
+
+        var secondNumber = prompt("Enter the second number:");
+
+
+        var result;
+        if (operation === '+') {
+            result = firstNumber + secondNumber;
+        } else if (operation === '-') {
+            result = firstNumber - secondNumber;
+        } else {
+
+            alert("Invalid operation. Please enter '+' for addition or '-' for subtraction.");
+
+            throw new Error("Invalid operation");
+        }
+
+        console.log(firstNumber)
+        console.log(operation)
+        console.log(secondNumber)
+
+        console.log(result) 
+
+        
+    </script>
+</body>
+</html>

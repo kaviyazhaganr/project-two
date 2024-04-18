@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <button id="click"> click me</button>
+
+
+    <button id="comment"> click me text</button>
+
+    <div style="margin-top: 30px;">
+
+        <form action="">
+
+            <input type="text" id="uname">
+        </form>
+
+        
+    </div>
+
+    <div style="padding-top:30px;">
+
+        <a href="" id="link" >palyer unkmown battle ground</a>
+    </div>
+
+    <script>
+
+        var click = document.getElementById("click")
+
+        click.addEventListener("click", clicktext)
+
+        function clicktext(event) {
+
+            console.log(event.target.textContent)
+
+            console.log("enter")
+        }
+
+        var unames = document.querySelector("#uname")
+
+        unames.addEventListener("input", uname_value)
+
+
+        function uname_value(event) {
+
+            console.log(event.target.value)
+
+
+        }
+
+        var link = document.querySelector("#link")
+
+        link.addEventListener("click", link_value)
+
+
+        function link_value(event) {
+
+            event.preventDefault()
+
+            console.log("enter click")
+
+            console.log(event)
+
+
+        }
+
+
+        function timer(){
+
+            alert("welcome to pubg")
+
+        }
+
+        // setTimeout(timer,5000)
+
+       var my_in = setInterval(timer,5000)
+
+       var stop_in = document.getElementById("comment")
+     
+       stop_in.addEventListener("click", stop_v)
+
+       
+       function stop_v(){
+        clearInterval(my_in)
+
+       }
+
+       
+    </script>
+</body>
+
+</html>

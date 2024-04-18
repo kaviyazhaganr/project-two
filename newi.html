@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>newi</title>
+
+    <style>
+        body {
+
+            width: 400px;
+            text-align: center;
+            border: 2px solid blue;
+            margin: auto;
+        }
+
+        .number {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            text-align: center;
+            line-height: 50px;
+        }
+
+        .even {
+            background-color: lightgreen;
+        }
+
+        .odd {
+            background-color: yellow;
+        }
+
+        .prime {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container"></div>
+
+
+
+    <script>
+
+
+        for (i = 0; i <= 100; i++) {
+
+            var div = document.createElement('div');
+            div.textContent = i;
+            div.classList.add('number');
+
+            if (i % 2 == 0) {
+
+                div.classList.add('even');
+
+
+            } else {
+                
+
+                div.classList.add('odd');
+
+            }
+            if (isPrime(i)) {
+                div.classList.add('prime');
+            }
+            // container.appendChild(div);
+            document.getElementById("container").appendChild(div)
+        }
+
+
+        function isPrime(numbers) {
+            if (numbers <= 1) {
+                return false;
+            }
+            if (numbers <= 3) {
+                return true;
+            }
+            if (numbers % 2 === 0 || numbers % 3 === 0) {
+                return false;
+            }
+            let i = 5;
+            while (i * i <= numbers) {
+                if (numbers % i === 0 || numbers % (i + 2) === 0) {
+                    return false;
+                }
+                i += 6;
+            }
+            return true;
+
+
+        }
+
+        isPrime(i)
+
+     
+
+    </script>
+
+
+</body>
+
+</html>

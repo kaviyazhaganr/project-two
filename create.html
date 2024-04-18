@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="box">
+
+
+    </div>
+
+
+    <div id="box1">
+
+
+        <select name="" id="drop">
+
+        </select>
+
+
+        <select name="" id="drop2">
+
+        </select>
+
+        <select name="" id="drop3"></select>
+
+
+    </div>
+
+
+    <ul id=list_item>
+        <li class="list_g">html</li>
+        <li class="list_g">css</li>
+    </ul>
+
+
+
+    <ul id=ul_two>
+
+    </ul>
+
+
+    <ul id="ul_three">
+
+
+    </ul>
+
+
+    <a id="anchor_one" href="">the one</a>
+
+
+
+
+    <script>
+
+
+
+
+        var h1 = document.createElement("h1")
+
+        h1.textContent = " ready for your dream job?"
+
+        document.getElementById("box").appendChild(h1)
+
+        h1.id = "head_one"
+
+
+
+
+        var h2 = document.createElement("h2")
+
+        h2.textContent = " ready for your dream job?"
+
+        var h3 = document.createElement("h3")
+
+        h3.textContent = " ready for your dream job?"
+
+        document.getElementById("box").append(h2, h3)
+
+
+
+
+
+        var list_li = document.createElement("li")
+
+        list_li.textContent = " one"
+
+        document.getElementById("list_item").appendChild(list_li)
+
+
+        var li_va1 = "https://www.google.com/"
+
+        document.getElementById("anchor_one").setAttribute("href", li_va1)
+
+        var list_lione = document.getElementById("list_item")
+
+        var list_lione_art = list_lione.getAttributeNames();
+
+        console.log(list_lione_art)
+
+
+
+
+        var arr = "chennai"
+
+        var arr2 = "madurai"
+        var arr3 = "salem"
+        var arr4 = "villupuram"
+
+        // console.log(arr)
+
+        // document.getElementById("box1").innerHTML = arr
+
+        // var li_one = document.getElementById("box1").innerHTML = arr
+
+
+        // console.log(li_one)
+
+        var option_one = document.createElement("option")
+
+        option_one.textContent = arr
+
+
+        var option_two = document.createElement("option")
+
+        option_two.textContent = arr2
+
+        var option_three = document.createElement("option")
+
+        option_three.textContent = arr3
+
+
+        var option_four = document.createElement("option")
+
+        option_four.textContent = arr4
+
+        console.log()
+
+        document.getElementById("drop").append(option_one, option_two, option_three, option_four)
+
+
+
+        var option_one = document.createElement("li")
+
+        option_one.textContent = arr
+
+
+        var option_two = document.createElement("li")
+
+        option_two.textContent = arr2
+
+        var option_three = document.createElement("li")
+
+        option_three.textContent = arr3
+
+
+        var option_four = document.createElement("li")
+
+        option_four.textContent = arr4
+
+        console.log()
+
+        document.getElementById("ul_two").append(option_one, option_two, option_three, option_four)
+
+
+
+
+
+        /*  Exercise  */
+
+
+        var arr_one = ["madurai", "chennar", "chinnasalem", "kallakurichi"]
+
+        for (var i of arr_one) {
+
+
+            // console.log("**********")
+            // console.log(i)
+
+            var option_one = document.createElement("option")
+
+            option_one.textContent = i
+
+            console.log(option_one)
+
+            document.getElementById("drop2").appendChild(option_one)
+
+        }
+
+
+        for (var i of arr_one) {
+
+
+            // console.log("**********")
+            // console.log(i)
+
+            var option_one = document.createElement("li")
+
+            option_one.textContent = i
+
+            console.log(option_one)
+
+            document.getElementById("ul_three").appendChild(option_one)
+
+        }
+
+
+
+        var get_li = document.getElementsByClassName("list_g")
+
+
+
+        console.log(get_li[1].innerHTML)
+
+
+        for (var i of get_li) {
+
+            var option_one = document.createElement("option")
+
+            option_one.textContent = i.innerHTML
+
+            document.getElementById("drop3").appendChild(option_one)
+        }
+
+        
+
+
+
+
+    </script>
+
+</body>
+
+</html>

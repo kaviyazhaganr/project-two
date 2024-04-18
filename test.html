@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
+
     <script>
 
         // var a = "10";
         // var b = 20;
         // var c;
-       
+
         // console.log(a)
         // c = a + b;
 
@@ -20,42 +22,232 @@
 
         // console.log(c)
 
-       /* var b = "chennai";
+    //    var b = "chennai";
 
-       var a = "chennai \"salem\" " + b + ", salem";
+    //    var a = "chennai \"salem\" " + b + ", salem";
+
+    //    console.log(a)
+
+    //    var a = ' chennai \'salem\'' + b +',kallakurichi'
 
 
 
-       console.log(a)*/
+    //    console.log(a)
 
     //    var a = Number("10");
-    var a ="10"
-       var b = 5;
-
-      
-       c = a + b
-       console.log(c)
-      var d =Number(a)
-       
-
-       console.log(a)
-        
-       c = d + b;
-
-       console.log(c)
+    // var a ="10"
+    //    var b = 5;
 
 
-    //    var e = 10
+    //    c = a + b
+    //    console.log(c)
+    //   var d =Number(a)
 
-    //    var f = 20
 
-    //    c = e + f
+    //    console.log(a)
+
+    //    c = d + b;
 
     //    console.log(c)
 
-    //    console.log(String(e) + String(f))
+
+       /*var e = 10
+
+       var f = 20
+
+       c = e + f
+
+       console.log(c)
+
+       console.log(String(e) + String(f))*/a
+
+        var a = 10
+
+        console.log(a)
+
+        a++
+
+        console.log(a)
+
+        a += 7
+
+        console.log(a)
+
+
+
+        //    console.log( a**3)
+
+
+        var a = 100;
+        var b = 200;
+        var c = 500
+
+        console.log(((a + b) + (b + a)) > c);
+
+
+        //    EB Bill calculation
+
+        var bill_unit = 956;
+        var bill_amt = 0;
+        var bill_reduce = 0;
+
+        if (bill_unit <= 100) {
+
+            bill_amt = 0 * bill_unit
+            console.log(bill_amt)
+        }
+        else if (bill_unit >= 100 && bill_unit <= 200) {
+
+            bill_amt = bill_unit - 100;
+            console.log(bill_amt)
+
+            bill_reduce = bill_amt
+
+            bill_amt = bill_reduce * 2.25
+            console.log(bill_amt)
+        }
+        else if (bill_unit >= 200 && bill_unit <= 400) {
+
+            bill_amt = bill_unit - 100;
+            console.log(bill_amt)
+
+            bill_reduce = bill_amt
+
+            bill_reduce = 100 * 2.25 + (bill_reduce - 100) * 4.50;
+
+            console.log(bill_reduce)
+        }
+        else if (bill_unit >= 400 && bill_unit <= 500) {
+
+            bill_amt = bill_unit - 100;
+            console.log(bill_amt)
+
+            bill_reduce = bill_amt
+
+            bill_reduce = 100 * 2.25 + 200 * 4.50 + (bill_reduce - 300) * 6;
+
+            console.log(bill_reduce)
+
+        }
+
+        else if (bill_unit >= 500 && bill_unit <= 600) {
+
+            bill_amt = bill_unit - 100;
+            console.log(bill_amt)
+
+            bill_reduce = bill_amt
+
+            bill_reduce = 300 * 4.50 + 100 * 6 + (bill_reduce - 400) * 8;
+
+            console.log(bill_reduce)
+
+        }
+
+        else if (bill_unit >= 600 && bill_unit <= 800) {
+
+            console.log("t")
+
+            bill_amt = bill_unit - 100;
+            console.log(bill_amt)
+
+            bill_reduce = bill_amt
+
+            bill_reduce = 300 * 4.50 + 100 * 6 + 100 * 8 + (bill_reduce - 500) * 9;
+
+            console.log(bill_reduce)
+
+        }
+        else if (bill_unit >= 800 && bill_unit <= 1000) {
+
+            console.log("f")
+
+            bill_amt = bill_unit - 100;
+            console.log(bill_amt)
+
+            bill_reduce = bill_amt
+
+            bill_reduce = 300 * 4.50 + 100 * 6 + 100 * 8 + 200 * 9 + (bill_reduce - 700) * 10;
+
+            console.log(bill_reduce)
+
+        }
+
+        else if (bill_unit > 1000) {
+
+            console.log("p")
+
+            bill_amt = bill_unit - 100;
+            console.log(bill_amt)
+
+            bill_reduce = bill_amt
+
+            bill_reduce = 300 * 4.50 + 100 * 6 + 100 * 8 + 200 * 9 + 200 * 10 + (bill_reduce - 900) * 11;
+
+            console.log(bill_reduce)
+
+
+        }
+
+
+        // var a = "Courseinn"
+        // var b = "Academy"
+        // var c = "Coursein_Academy"
+
+        // var d = prompt("enter the value")
+
+        // var e = prompt("enter the value")
+
+
+
+        // if (e == 3) {
+
+        //     f = d * e;
+
+        //     console.log(f, "", a);
+        // }
+        // else if (e == 5 && d !=3) {
+
+        //     f = d * e;
+
+        //     console.log(f, "", b);
+
+        // }
+        // else if (d == 3 &&  e == 5) {
+
+        //     f = d * e;
+
+        //     console.log(f, "", c);
+
+        // }
+
+// Given arrays
+const arr1 = [3, 45, 23, 78, 34];
+const arr2 = [4, 2, 34, 4, 12, 1];
+
+// Function to find the product of two arrays
+function arrayProduct(arr1, arr2) {
+    // Determine the length of the resulting array
+    const length = Math.min(arr1.length, arr2.length);
+
+    // Initialize an array to store the products
+    const productArray = [];
+
+    // Iterate over the arrays and calculate the product of corresponding elements
+    for (let i = 0; i < length; i++) {
+        productArray.push(arr1[i] * arr2[i]);
+    }
+
+    return productArray;
+}
+
+// Calling the function
+const product = arrayProduct(arr1, arr2);
+console.log(product);
+
+
 
 
     </script>
 </body>
+
 </html>
